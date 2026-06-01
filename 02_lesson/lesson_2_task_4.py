@@ -1,12 +1,14 @@
-def fizz_buzz(n):
-    for num in range(1, n + 1):
-        if num % 15 == 0:
+n = int(input("Введите число"))
+
+def fizz_buzz(n):  # noqa
+    for i in range(1, n + 1):
+        if i % 15 == 0:
             print("FizzBuzz")
-        elif num % 3 == 0:
+        elif i % 3 == 0:
             print("Fizz")
-        elif num % 5 == 0:
+        elif i % 5 == 0:
             print("Buzz")
         else:
-            print(num)
+            print(i)
 
-fizz_buzz(10) # noqa
+fizz_buzz(n) # noqa
